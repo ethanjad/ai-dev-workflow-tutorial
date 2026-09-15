@@ -21,3 +21,8 @@ def monthly_sales_trend(df):
     result = result.sort_values("month")
     result["month_label"] = result["month"].dt.strftime("%b %Y")
     return result[["month_label", "total_amount"]].reset_index(drop=True)
+
+
+def sales_by_category(df):
+    result = df.groupby("category")["total_amount"].sum().reset_index()
+    return result.sort_values("total_amount", ascending=False).reset_index(drop=True)

@@ -6,6 +6,7 @@ from calculations import (
     compute_total_sales,
     compute_total_orders,
     monthly_sales_trend,
+    sales_by_category,
 )
 
 
@@ -37,6 +38,12 @@ def test_monthly_sales_trend_aggregates_by_month(sample_df):
     result = monthly_sales_trend(sample_df)
     assert list(result["month_label"]) == ["Jan 2024", "Feb 2024"]
     assert list(result["total_amount"]) == [150.0, 230.0]
+
+
+def test_sales_by_category_sorted_descending(sample_df):
+    result = sales_by_category(sample_df)
+    assert list(result["category"]) == ["Electronics", "Accessories"]
+    assert list(result["total_amount"]) == [300.0, 80.0]
 
 
 def test_load_data_reads_csv_and_parses_dates():
