@@ -29,6 +29,7 @@ Each milestone moves through To Do -> In Progress -> Done.
 - [x] **TASK-2: KPI scorecards**
   - [x] Total Sales and Total Orders displayed prominently, formatted as currency/numbers with separators
   - Commit: 730a17e
+  - Notes: Clean — implementation followed the plan as written; computed values matched the PRD's expected output ($116,500 / 482 orders) on the first run. (Minor: the plan path you gave, 2026-09-08-sales-dashboard.md, doesn't exist — used the 2026-09-14 file instead, per your confirmation.)
 - [x] **TASK-1: Project setup and data loading**
   - [x] App runs with `streamlit run app.py` and shows a title
   - [x] Loads `data/sales-data.csv`; handles standard CSV formatting (date, numeric, categorical columns)
