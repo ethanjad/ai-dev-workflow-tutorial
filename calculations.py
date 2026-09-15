@@ -12,3 +12,12 @@ def compute_total_sales(df):
 
 def compute_total_orders(df):
     return df["order_id"].nunique()
+
+
+def monthly_sales_trend(df):
+    monthly = df.copy()
+    monthly["month"] = monthly["date"].dt.to_period("M")
+    result = monthly.groupby("month")["total_amount"].sum().reset_index()
+    result = result.sort_values("month")
+    result["month_label"] = result["month"].dt.strftime("%b %Y")
+    return result[["month_label", "total_amount"]].reset_index(drop=True)
