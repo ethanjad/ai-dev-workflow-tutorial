@@ -9,9 +9,6 @@ Each milestone moves through To Do -> In Progress -> Done.
 - Changes committed with the milestone ID in the message
 
 ## To Do
-- [ ] **TASK-3: Sales trend chart**
-  - [ ] Line chart of sales over time renders from the data, with interactive tooltips showing exact values
-  - Commit:
 - [ ] **TASK-4: Category breakdown**
   - [ ] Bar chart of sales by product category, sorted highest to lowest, with interactive tooltips
   - Commit:
@@ -26,6 +23,10 @@ Each milestone moves through To Do -> In Progress -> Done.
 ## In Progress
 
 ## Done
+- [x] **TASK-3: Sales trend chart**
+  - [x] Line chart of sales over time renders from the data, with interactive tooltips showing exact values
+  - Commit: beb6531
+  - Notes: Clean — implementation followed the plan as written; 12 months, chronologically sorted, monthly totals sum to the same $116,500 as TASK-2. (Minor: your request named TASK-3 in the first sentence but TASK-2 in the finalize sentence — flagged it and confirmed you meant TASK-3 throughout before starting.)
 - [x] **TASK-2: KPI scorecards**
   - [x] Total Sales and Total Orders displayed prominently, formatted as currency/numbers with separators
   - Commit: 730a17e
