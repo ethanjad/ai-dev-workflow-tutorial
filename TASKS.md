@@ -9,9 +9,6 @@ Each milestone moves through To Do -> In Progress -> Done.
 - Changes committed with the milestone ID in the message
 
 ## To Do
-- [ ] **TASK-2: KPI scorecards**
-  - [ ] Total Sales and Total Orders displayed prominently, formatted as currency/numbers with separators
-  - Commit:
 - [ ] **TASK-3: Sales trend chart**
   - [ ] Line chart of sales over time renders from the data, with interactive tooltips showing exact values
   - Commit:
@@ -29,6 +26,9 @@ Each milestone moves through To Do -> In Progress -> Done.
 ## In Progress
 
 ## Done
+- [x] **TASK-2: KPI scorecards**
+  - [x] Total Sales and Total Orders displayed prominently, formatted as currency/numbers with separators
+  - Commit: 730a17e
 - [x] **TASK-1: Project setup and data loading**
   - [x] App runs with `streamlit run app.py` and shows a title
   - [x] Loads `data/sales-data.csv`; handles standard CSV formatting (date, numeric, categorical columns)
