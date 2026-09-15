@@ -26,3 +26,8 @@ def monthly_sales_trend(df):
 def sales_by_category(df):
     result = df.groupby("category")["total_amount"].sum().reset_index()
     return result.sort_values("total_amount", ascending=False).reset_index(drop=True)
+
+
+def sales_by_region(df):
+    result = df.groupby("region")["total_amount"].sum().reset_index()
+    return result.sort_values("total_amount", ascending=False).reset_index(drop=True)

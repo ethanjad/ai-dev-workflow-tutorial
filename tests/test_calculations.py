@@ -7,6 +7,7 @@ from calculations import (
     compute_total_orders,
     monthly_sales_trend,
     sales_by_category,
+    sales_by_region,
 )
 
 
@@ -43,6 +44,12 @@ def test_monthly_sales_trend_aggregates_by_month(sample_df):
 def test_sales_by_category_sorted_descending(sample_df):
     result = sales_by_category(sample_df)
     assert list(result["category"]) == ["Electronics", "Accessories"]
+    assert list(result["total_amount"]) == [300.0, 80.0]
+
+
+def test_sales_by_region_sorted_descending(sample_df):
+    result = sales_by_region(sample_df)
+    assert list(result["region"]) == ["North", "South"]
     assert list(result["total_amount"]) == [300.0, 80.0]
 
 
