@@ -7,6 +7,7 @@ from calculations import (
     compute_total_orders,
     monthly_sales_trend,
     sales_by_category,
+    sales_by_region,
 )
 
 st.set_page_config(page_title="ShopSmart Sales Dashboard", layout="wide")
@@ -40,3 +41,10 @@ with col3:
     fig_cat = px.bar(category_df, x="category", y="total_amount")
     fig_cat.update_layout(xaxis_title="Category", yaxis_title="Sales ($)")
     st.plotly_chart(fig_cat, use_container_width=True)
+
+with col4:
+    st.subheader("Sales by Region")
+    region_df = sales_by_region(df)
+    fig_reg = px.bar(region_df, x="region", y="total_amount")
+    fig_reg.update_layout(xaxis_title="Region", yaxis_title="Sales ($)")
+    st.plotly_chart(fig_reg, use_container_width=True)
