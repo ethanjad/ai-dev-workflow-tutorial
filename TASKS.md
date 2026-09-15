@@ -9,9 +9,6 @@ Each milestone moves through To Do -> In Progress -> Done.
 - Changes committed with the milestone ID in the message
 
 ## To Do
-- [ ] **TASK-5: Regional breakdown**
-  - [ ] Bar chart of sales by region, sorted highest to lowest, with interactive tooltips
-  - Commit:
 - [ ] **TASK-6: Test and deploy**
   - [ ] Dashboard runs without errors, loads within 5 seconds, and matches the PRD's Expected Output values
   - [ ] Deployed to Streamlit Community Cloud and accessible via public URL
@@ -20,6 +17,10 @@ Each milestone moves through To Do -> In Progress -> Done.
 ## In Progress
 
 ## Done
+- [x] **TASK-5: Regional breakdown**
+  - [x] Bar chart of sales by region, sorted highest to lowest, with interactive tooltips
+  - Commit: d18fc94
+  - Notes: Clean — implementation followed the plan as written; all four regions present (North/South/East/West), sorted descending, matching the PRD's expected output. Same recurring template mismatch (TASK-2 named in the finalize sentence) — treated as TASK-5 throughout per the established pattern.
 - [x] **TASK-4: Category breakdown**
   - [x] Bar chart of sales by product category, sorted highest to lowest, with interactive tooltips
   - Commit: 91b0c5a
