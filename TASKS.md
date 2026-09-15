@@ -9,15 +9,15 @@ Each milestone moves through To Do -> In Progress -> Done.
 - Changes committed with the milestone ID in the message
 
 ## To Do
-- [ ] **TASK-6: Test and deploy**
-  - [x] Dashboard runs without errors, loads within 5 seconds, and matches the PRD's Expected Output values
-  - [ ] Deployed to Streamlit Community Cloud and accessible via public URL
-  - Commit: (no code changes — verification only; full pytest suite (7/7) and PRD checklist passed as-is)
-  - Notes: Verified — 7/7 tests pass; data pipeline runs in 0.24s (well under the 5s NFR budget); no warnings/errors/tracebacks in the server log; Total Sales $116,500, Total Orders 482, Top Category Electronics, Regions North/South/East/West all match the PRD's Expected Output table exactly. NOT verified by me: "professional appearance" — that's a visual judgment call I can't make without either you looking at http://localhost:8501 yourself or me driving a browser tool to screenshot it; let me know which you'd prefer. Deployment is your step — moved back to To Do; you'll run it from `main` after we merge.
 
 ## In Progress
 
 ## Done
+- [x] **TASK-6: Test and deploy**
+  - [x] Dashboard runs without errors, loads within 5 seconds, and matches the PRD's Expected Output values
+  - [x] Deployed to Streamlit Community Cloud and accessible via public URL — https://sales-dashboard-ethanjad.streamlit.app/
+  - Commit: (no code changes — verification only; deployment run manually via Streamlit Community Cloud, not a git commit)
+  - Notes: Verified — 7/7 tests pass; data pipeline runs in 0.24s (well under the 5s NFR budget); no warnings/errors/tracebacks in the server log; Total Sales $116,500, Total Orders 482, Top Category Electronics, Regions North/South/East/West all match the PRD's Expected Output table exactly. "Professional appearance" was not verified by Claude (subjective/visual). Deployment was run by you from `main` after merge, per the plan.
 - [x] **TASK-5: Regional breakdown**
   - [x] Bar chart of sales by region, sorted highest to lowest, with interactive tooltips
   - Commit: d18fc94
