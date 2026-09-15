@@ -4,3 +4,7 @@ import pandas as pd
 
 def load_data(path="data/sales-data.csv"):
     return pd.read_csv(path, parse_dates=["date"])
+
+
+def compute_total_sales(df):
+    return df["total_amount"].sum()
