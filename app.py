@@ -6,6 +6,7 @@ from calculations import (
     compute_total_sales,
     compute_total_orders,
     monthly_sales_trend,
+    sales_by_category,
 )
 
 st.set_page_config(page_title="ShopSmart Sales Dashboard", layout="wide")
@@ -31,3 +32,11 @@ trend_df = monthly_sales_trend(df)
 fig_trend = px.line(trend_df, x="month_label", y="total_amount", markers=True)
 fig_trend.update_layout(xaxis_title="Month", yaxis_title="Sales ($)")
 st.plotly_chart(fig_trend, use_container_width=True)
+
+col3, col4 = st.columns(2)
+with col3:
+    st.subheader("Sales by Category")
+    category_df = sales_by_category(df)
+    fig_cat = px.bar(category_df, x="category", y="total_amount")
+    fig_cat.update_layout(xaxis_title="Category", yaxis_title="Sales ($)")
+    st.plotly_chart(fig_cat, use_container_width=True)
