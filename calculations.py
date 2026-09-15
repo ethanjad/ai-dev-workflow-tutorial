@@ -8,3 +8,7 @@ def load_data(path="data/sales-data.csv"):
 
 def compute_total_sales(df):
     return df["total_amount"].sum()
+
+
+def compute_total_orders(df):
+    return df["order_id"].nunique()

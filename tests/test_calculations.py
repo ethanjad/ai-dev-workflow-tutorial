@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from calculations import load_data, compute_total_sales
+from calculations import load_data, compute_total_sales, compute_total_orders
 
 
 @pytest.fixture
@@ -22,6 +22,10 @@ def sample_df():
 
 def test_compute_total_sales_sums_total_amount(sample_df):
     assert compute_total_sales(sample_df) == 380.0
+
+
+def test_compute_total_orders_counts_unique_order_ids(sample_df):
+    assert compute_total_orders(sample_df) == 4
 
 
 def test_load_data_reads_csv_and_parses_dates():
