@@ -9,9 +9,6 @@ Each milestone moves through To Do -> In Progress -> Done.
 - Changes committed with the milestone ID in the message
 
 ## To Do
-- [ ] **TASK-4: Category breakdown**
-  - [ ] Bar chart of sales by product category, sorted highest to lowest, with interactive tooltips
-  - Commit:
 - [ ] **TASK-5: Regional breakdown**
   - [ ] Bar chart of sales by region, sorted highest to lowest, with interactive tooltips
   - Commit:
@@ -23,6 +20,10 @@ Each milestone moves through To Do -> In Progress -> Done.
 ## In Progress
 
 ## Done
+- [x] **TASK-4: Category breakdown**
+  - [x] Bar chart of sales by product category, sorted highest to lowest, with interactive tooltips
+  - Commit: 91b0c5a
+  - Notes: Clean — implementation followed the plan as written; sorted descending, top category Electronics ($42,683.67), matching the PRD's expected output. Same recurring template mismatch (TASK-2 named in the finalize sentence) — treated as TASK-4 throughout per the pattern you confirmed on TASK-3.
 - [x] **TASK-3: Sales trend chart**
   - [x] Line chart of sales over time renders from the data, with interactive tooltips showing exact values
   - Commit: beb6531
