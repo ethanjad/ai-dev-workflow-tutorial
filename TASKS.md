@@ -32,7 +32,8 @@ Each milestone moves through To Do -> In Progress -> Done.
 - [x] **TASK-1: Project setup and data loading**
   - [x] App runs with `streamlit run app.py` and shows a title
   - [x] Loads `data/sales-data.csv`; handles standard CSV formatting (date, numeric, categorical columns)
-  - Commit: 522443d, dd21f03, e2f4e37
+  - Commit: e2f4e37
+  - Notes: Claude's `kill $(cat pid_file)` after backgrounding the dev server with `&` didn't fully stop it — two streamlit processes survived on ports 8501/8502 and had to be `pkill`ed manually before the next run. No code issues; implementation followed the plan as written.
 /statusline show the current git branch, the folder, the model, the reasoning effort, and the context usage
 
 
