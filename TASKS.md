@@ -9,13 +9,13 @@ Each milestone moves through To Do -> In Progress -> Done.
 - Changes committed with the milestone ID in the message
 
 ## To Do
-
-## In Progress
 - [ ] **TASK-6: Test and deploy**
   - [x] Dashboard runs without errors, loads within 5 seconds, and matches the PRD's Expected Output values
   - [ ] Deployed to Streamlit Community Cloud and accessible via public URL
   - Commit: (no code changes — verification only; full pytest suite (7/7) and PRD checklist passed as-is)
-  - Notes: Verified — 7/7 tests pass; data pipeline runs in 0.24s (well under the 5s NFR budget); no warnings/errors/tracebacks in the server log; Total Sales $116,500, Total Orders 482, Top Category Electronics, Regions North/South/East/West all match the PRD's Expected Output table exactly. NOT verified by me: "professional appearance" — that's a visual judgment call I can't make without either you looking at http://localhost:8501 yourself or me driving a browser tool to screenshot it; let me know which you'd prefer. Deployment to Streamlit Community Cloud is still outstanding — per the plan, that step is yours to run (needs your GitHub sign-in in a browser), so I haven't touched this checkbox or moved TASK-6 to Done.
+  - Notes: Verified — 7/7 tests pass; data pipeline runs in 0.24s (well under the 5s NFR budget); no warnings/errors/tracebacks in the server log; Total Sales $116,500, Total Orders 482, Top Category Electronics, Regions North/South/East/West all match the PRD's Expected Output table exactly. NOT verified by me: "professional appearance" — that's a visual judgment call I can't make without either you looking at http://localhost:8501 yourself or me driving a browser tool to screenshot it; let me know which you'd prefer. Deployment is your step — moved back to To Do; you'll run it from `main` after we merge.
+
+## In Progress
 
 ## Done
 - [x] **TASK-5: Regional breakdown**
